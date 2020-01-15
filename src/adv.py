@@ -1,4 +1,7 @@
 from room import Room
+from player import Player
+from item import Item
+import sys 
 
 # Declare all the rooms
 
