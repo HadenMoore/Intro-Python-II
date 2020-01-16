@@ -1,9 +1,7 @@
 # Items Class: 
-class Item: 
-    fef __init__(self, name, description):
-    self.name = name 
-    self.description = description 
-def on_take(): 
-    pass
-def on_drop(): 
-    pass 
+class Items: 
+    """Consumables and Weapons to be littered about."""
+    def __init__(self, name, description, usage):
+        self.name = name
+        self.description = description
+        self.usage = usage

@@ -36,11 +36,32 @@ room['narrow'].w_to = room['foyer']
 room['narrow'].n_to = room['treasure']
 room['treasure'].s_to = room['narrow']
 
-#
+# Item List: 
+
+item_list = {
+    'Battle Axe':    Item("Battle Axe", 
+    """Battle Axe: Condition: New. 
+    You should hold to this just in case.""", 
+    """You pick up the axe and admire it, feeling somewhat more protected."""), 
+
+}
 # Main
 #
 
 # Make a new player object that is currently in the 'outside' room.
+
+current_room = room['outside']
+game_active = True
+
+# Prompt Player to Give Their Hero a Unique Name & Store it in a Variable: 
+char_name = (input)
+
+player1 = Player(char_name, current_room, [])
+
+print(f'\nWelcome {player1.name}!\n')
+
+list_controls()
+
 
 # Write a loop that:
 #
